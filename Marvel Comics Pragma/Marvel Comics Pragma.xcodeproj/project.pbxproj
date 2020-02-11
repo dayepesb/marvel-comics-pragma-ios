@@ -15,6 +15,10 @@
 		8016A56523F1F7C9006C4697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8016A56323F1F7C9006C4697 /* LaunchScreen.storyboard */; };
 		8016A57223F24E3C006C4697 /* ImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8016A57123F24E3C006C4697 /* ImageAssets.xcassets */; };
 		8016A57C23F26A90006C4697 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A57B23F26A90006C4697 /* UIViewControllerExtension.swift */; };
+		8016A58023F27B31006C4697 /* ColorAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8016A57F23F27B31006C4697 /* ColorAssets.xcassets */; };
+		8016A58223F30948006C4697 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A58123F30948006C4697 /* UIStoryboard.swift */; };
+		8016A58723F320DD006C4697 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8016A58623F320DD006C4697 /* OnBoarding.storyboard */; };
+		8016A58A23F32129006C4697 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A58923F32129006C4697 /* OnBoardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		8016A56623F1F7C9006C4697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8016A57123F24E3C006C4697 /* ImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageAssets.xcassets; sourceTree = "<group>"; };
 		8016A57B23F26A90006C4697 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		8016A57F23F27B31006C4697 /* ColorAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorAssets.xcassets; sourceTree = "<group>"; };
+		8016A58123F30948006C4697 /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		8016A58623F320DD006C4697 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		8016A58923F32129006C4697 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 		8016A55723F1F7BF006C4697 /* Marvel Comics Pragma */ = {
 			isa = PBXGroup;
 			children = (
+				8016A58323F31FCE006C4697 /* Application */,
 				8016A57623F26305006C4697 /* Extensions */,
 				8016A57323F25FC6006C4697 /* Base */,
 				8016A56E23F24B83006C4697 /* Assets */,
@@ -89,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				8016A57123F24E3C006C4697 /* ImageAssets.xcassets */,
+				8016A57F23F27B31006C4697 /* ColorAssets.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -105,8 +115,26 @@
 			isa = PBXGroup;
 			children = (
 				8016A57B23F26A90006C4697 /* UIViewControllerExtension.swift */,
+				8016A58123F30948006C4697 /* UIStoryboard.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8016A58323F31FCE006C4697 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8016A58823F320F5006C4697 /* OnBoarding */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8016A58823F320F5006C4697 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				8016A58623F320DD006C4697 /* OnBoarding.storyboard */,
+				8016A58923F32129006C4697 /* OnBoardingViewController.swift */,
+			);
+			path = OnBoarding;
 			sourceTree = "<group>";
 		};
 		ED9E81CB38487D420BE78664 /* Pods */ = {
@@ -179,7 +207,9 @@
 			files = (
 				8016A56523F1F7C9006C4697 /* LaunchScreen.storyboard in Resources */,
 				8016A56023F1F7BF006C4697 /* Main.storyboard in Resources */,
+				8016A58023F27B31006C4697 /* ColorAssets.xcassets in Resources */,
 				8016A57223F24E3C006C4697 /* ImageAssets.xcassets in Resources */,
+				8016A58723F320DD006C4697 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8016A55D23F1F7BF006C4697 /* ViewController.swift in Sources */,
+				8016A58223F30948006C4697 /* UIStoryboard.swift in Sources */,
 				8016A55923F1F7BF006C4697 /* AppDelegate.swift in Sources */,
+				8016A58A23F32129006C4697 /* OnBoardingViewController.swift in Sources */,
 				8016A57C23F26A90006C4697 /* UIViewControllerExtension.swift in Sources */,
 				8016A55B23F1F7BF006C4697 /* SceneDelegate.swift in Sources */,
 			);
@@ -365,6 +397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Marvel Comics Pragma/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +405,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "co.com.yepes.Marvel-Comics-Pragma";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,6 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Marvel Comics Pragma/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +424,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "co.com.yepes.Marvel-Comics-Pragma";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

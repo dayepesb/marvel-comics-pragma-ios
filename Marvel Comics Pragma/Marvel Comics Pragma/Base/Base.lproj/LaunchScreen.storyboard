@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -19,16 +19,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MarvelTextSplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="yAT-NK-J6m">
-                                <rect key="frame" x="120" y="372.5" width="174" height="151"/>
+                                <rect key="frame" x="120" y="297" width="174" height="302"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PragmaTextSplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="PDl-Fi-MZB">
-                                <rect key="frame" x="84" y="827" width="246" height="20"/>
+                                <rect key="frame" x="-39" y="837" width="492" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="20" id="jWU-gJ-Pja"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoPragmaSplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="LO9-V7-D0j">
-                                <rect key="frame" x="135.5" y="762" width="143" height="50"/>
+                                <rect key="frame" x="64" y="772" width="286" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="YbJ-eb-gDs"/>
                                 </constraints>
@@ -50,7 +50,7 @@
                             <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="LO9-V7-D0j" secondAttribute="trailing" constant="180" id="avQ-UO-Hma"/>
                             <constraint firstItem="PDl-Fi-MZB" firstAttribute="top" secondItem="LO9-V7-D0j" secondAttribute="bottom" constant="15" id="dak-7h-eGP"/>
                             <constraint firstItem="LO9-V7-D0j" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fW9-vu-9He"/>
-                            <constraint firstItem="PDl-Fi-MZB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-15" id="oFj-Hv-YJq"/>
+                            <constraint firstItem="PDl-Fi-MZB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-5" id="oFj-Hv-YJq"/>
                             <constraint firstItem="sHi-Wa-w2S" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="op7-OR-8ze"/>
                             <constraint firstItem="PDl-Fi-MZB" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="140" id="pXr-g8-Ghi"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yAT-NK-J6m" secondAttribute="trailing" constant="120" id="qog-6u-6d1"/>
