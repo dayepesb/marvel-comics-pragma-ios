@@ -12,8 +12,9 @@
 		8016A55B23F1F7BF006C4697 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A55A23F1F7BF006C4697 /* SceneDelegate.swift */; };
 		8016A55D23F1F7BF006C4697 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A55C23F1F7BF006C4697 /* ViewController.swift */; };
 		8016A56023F1F7BF006C4697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8016A55E23F1F7BF006C4697 /* Main.storyboard */; };
-		8016A56223F1F7C9006C4697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8016A56123F1F7C9006C4697 /* Assets.xcassets */; };
 		8016A56523F1F7C9006C4697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8016A56323F1F7C9006C4697 /* LaunchScreen.storyboard */; };
+		8016A57223F24E3C006C4697 /* ImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8016A57123F24E3C006C4697 /* ImageAssets.xcassets */; };
+		8016A57C23F26A90006C4697 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A57B23F26A90006C4697 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +26,10 @@
 		8016A55A23F1F7BF006C4697 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8016A55C23F1F7BF006C4697 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8016A55F23F1F7BF006C4697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8016A56123F1F7C9006C4697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8016A56423F1F7C9006C4697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8016A56623F1F7C9006C4697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8016A57123F24E3C006C4697 /* ImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageAssets.xcassets; sourceTree = "<group>"; };
+		8016A57B23F26A90006C4697 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +73,40 @@
 		8016A55723F1F7BF006C4697 /* Marvel Comics Pragma */ = {
 			isa = PBXGroup;
 			children = (
+				8016A57623F26305006C4697 /* Extensions */,
+				8016A57323F25FC6006C4697 /* Base */,
+				8016A56E23F24B83006C4697 /* Assets */,
 				8016A55823F1F7BF006C4697 /* AppDelegate.swift */,
 				8016A55A23F1F7BF006C4697 /* SceneDelegate.swift */,
 				8016A55C23F1F7BF006C4697 /* ViewController.swift */,
 				8016A55E23F1F7BF006C4697 /* Main.storyboard */,
-				8016A56123F1F7C9006C4697 /* Assets.xcassets */,
-				8016A56323F1F7C9006C4697 /* LaunchScreen.storyboard */,
 				8016A56623F1F7C9006C4697 /* Info.plist */,
 			);
 			path = "Marvel Comics Pragma";
+			sourceTree = "<group>";
+		};
+		8016A56E23F24B83006C4697 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8016A57123F24E3C006C4697 /* ImageAssets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8016A57323F25FC6006C4697 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8016A56323F1F7C9006C4697 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8016A57623F26305006C4697 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8016A57B23F26A90006C4697 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		ED9E81CB38487D420BE78664 /* Pods */ = {
@@ -88,7 +115,6 @@
 				3B0A549FA3D07E4C1A3FF411 /* Pods-Marvel Comics Pragma.debug.xcconfig */,
 				5B47067DA144A59EB080FAE5 /* Pods-Marvel Comics Pragma.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,8 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8016A56523F1F7C9006C4697 /* LaunchScreen.storyboard in Resources */,
-				8016A56223F1F7C9006C4697 /* Assets.xcassets in Resources */,
 				8016A56023F1F7BF006C4697 /* Main.storyboard in Resources */,
+				8016A57223F24E3C006C4697 /* ImageAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +217,7 @@
 			files = (
 				8016A55D23F1F7BF006C4697 /* ViewController.swift in Sources */,
 				8016A55923F1F7BF006C4697 /* AppDelegate.swift in Sources */,
+				8016A57C23F26A90006C4697 /* UIViewControllerExtension.swift in Sources */,
 				8016A55B23F1F7BF006C4697 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -321,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

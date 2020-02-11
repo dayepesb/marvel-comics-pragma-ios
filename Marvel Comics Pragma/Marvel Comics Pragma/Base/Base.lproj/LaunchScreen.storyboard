@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundSplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="sHi-Wa-w2S">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MarvelTextSplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="yAT-NK-J6m">
+                                <rect key="frame" x="120" y="372.5" width="174" height="151"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PragmaTextSplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="PDl-Fi-MZB">
+                                <rect key="frame" x="160" y="807" width="94" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="128" id="jWU-gJ-Pja"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoPragmaSplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="LO9-V7-D0j">
+                                <rect key="frame" x="180" y="707" width="54" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="YbJ-eb-gDs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sHi-Wa-w2S" secondAttribute="trailing" id="3rl-dq-mqc"/>
+                            <constraint firstItem="LO9-V7-D0j" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="160" id="4j6-WR-Lx7"/>
+                            <constraint firstItem="PDl-Fi-MZB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4oG-9i-urm"/>
+                            <constraint firstAttribute="bottom" secondItem="sHi-Wa-w2S" secondAttribute="bottom" id="7tO-Jf-qbd"/>
+                            <constraint firstItem="sHi-Wa-w2S" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="9PV-4L-6uw"/>
+                            <constraint firstItem="yAT-NK-J6m" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="BP6-Bb-NmF"/>
+                            <constraint firstItem="yAT-NK-J6m" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Goe-4f-FcZ"/>
+                            <constraint firstItem="yAT-NK-J6m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="120" id="Hvc-Ts-ztA"/>
+                            <constraint firstItem="sHi-Wa-w2S" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PX4-4W-CZW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PDl-Fi-MZB" secondAttribute="trailing" constant="140" id="S4j-ZL-fQV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LO9-V7-D0j" secondAttribute="trailing" constant="160" id="avQ-UO-Hma"/>
+                            <constraint firstItem="PDl-Fi-MZB" firstAttribute="top" secondItem="LO9-V7-D0j" secondAttribute="bottom" id="dak-7h-eGP"/>
+                            <constraint firstItem="LO9-V7-D0j" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fW9-vu-9He"/>
+                            <constraint firstItem="PDl-Fi-MZB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oFj-Hv-YJq"/>
+                            <constraint firstItem="sHi-Wa-w2S" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="op7-OR-8ze"/>
+                            <constraint firstItem="PDl-Fi-MZB" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="140" id="pXr-g8-Ghi"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yAT-NK-J6m" secondAttribute="trailing" constant="120" id="qog-6u-6d1"/>
+                            <constraint firstItem="sHi-Wa-w2S" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="zjW-6C-ldw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackgroundSplashScreen" width="1242" height="2688"/>
+        <image name="LogoPragmaSplashScreen" width="143" height="161"/>
+        <image name="MarvelTextSplashScreen" width="405" height="151"/>
+        <image name="PragmaTextSplashScreen" width="246" height="55"/>
+    </resources>
+</document>
