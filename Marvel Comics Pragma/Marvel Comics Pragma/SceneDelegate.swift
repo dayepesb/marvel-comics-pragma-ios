@@ -21,6 +21,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        let viewController = UIStoryboard(name: "OnBoarding", bundle: Bundle.main).instantiateInitialViewController()
+        
+        window?.rootViewController = viewController
+        
+        window?.makeKeyAndVisible()
+        
+        //onBoardingDisplay()
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -58,5 +67,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
+    private func onBoardingDisplay() ->Void {
+        let onBoarding = UserDefaults.standard.value(forKey: "watchingOnboarding") as? Bool ?? false
+        
+        var name = "OnBoarding"
+        
+        if onBoarding {
+            name = "Main"
+        }
+        
+        let viewController = UIStoryboard(name: name, bundle: Bundle.main).instantiateInitialViewController()
+        
+        window?.rootViewController = viewController
+        
+        window?.makeKeyAndVisible()
+ 
+         
+    }
+    
 }
 

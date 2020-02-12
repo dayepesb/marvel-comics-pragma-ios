@@ -15,20 +15,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KI-ye-kzD">
-                                <rect key="frame" x="186" y="144" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVr-in-D0s">
+                                <rect key="frame" x="165.5" y="437.5" width="83" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4KI-ye-kzD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="186" id="PEU-19-dSd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4KI-ye-kzD" secondAttribute="trailing" constant="186" id="eL4-5z-zum"/>
-                            <constraint firstItem="4KI-ye-kzD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="kGi-31-XUj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4KI-ye-kzD" secondAttribute="bottom" constant="697" id="xQV-cG-gzh"/>
+                            <constraint firstItem="YVr-in-D0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7IQ-47-zEQ"/>
+                            <constraint firstItem="YVr-in-D0s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jM5-dQ-7XM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

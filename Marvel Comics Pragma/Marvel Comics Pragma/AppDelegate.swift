@@ -15,10 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        UIView.appearance().backgroundColor = UIColor(named: "BackgroundColor")
-        UILabel.appearance().tintColor = UIColor.white
+        //UIView.appearance().backgroundColor = UIColor(named: "BackgroundColor")
+        //UILabel.appearance().tintColor = UIColor.white
         
-        onBoardingDisplay()
+        //onBoardingDisplay()
+        
+        let viewController = UIStoryboard(name: "OnBoarding", bundle: Bundle.main).instantiateInitialViewController()
+        
+        window?.rootViewController = viewController
+        
+        window?.makeKeyAndVisible()
         
         return true
     }
@@ -44,8 +50,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func onBoardingDisplay() ->Void {
+        
         let onBoarding = UserDefaults.standard.value(forKey: "watchingOnboarding") as? Bool ?? false
-        window = UIWindow(frame: UIScreen.main.bounds)
         
         var name = "OnBoarding"
         

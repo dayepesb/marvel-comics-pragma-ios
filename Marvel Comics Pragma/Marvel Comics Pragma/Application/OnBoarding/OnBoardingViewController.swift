@@ -8,33 +8,52 @@
 
 import UIKit
 
-class OnBoardingViewController: UIViewController {
+class OnBoardingViewController: UIPageViewController {
 
+    var pageControl: UIPageControl?
+
+    fileprivate(set) lazy var items: [OnBoardingItem] = {
+        return [
+            OnBoardingItem(title: "Title 1 OnBoarding", Description: "Description onboarding 1", image: "OnBoarding1"),
+            OnBoardingItem(title: "Title 2 OnBoarding", Description: "Description onboarding 2", image: "OnBoarding2"),
+            OnBoardingItem(title: "Title 3 OnBoarding", Description: "Description onboarding 3", image: "OnBoarding3")
+        ]
+    }()
+    
+    fileprivate(set) lazy var contentViewControllers: [UIViewController] = {
+        var items = [UIViewController]()
+        for i in 0 ..< self.items.count {
+            items.append(self.instanteViewController(i))
+        }
+        return items
+    }()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        delegate = self
+        dataSource = self
         
-        
-        
+        pageControl?.numberOfPages = items.count
+        updateContainerView(stepNumber: 0)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        /*
-        if segue.identifier == "goToSignIn"{
-            UserDefaults.standard.set(true,forKey: "watchingOnboarding")
-            UserDefaults.standard.synchronize()
-            return
-        }
-        guard segue.identifier == "openOnBoarding",
-            let destination = segue.destination as? OnBoardingViewController else {
-            return
-        }
-        
-        destination.pageControl = pageControl
- 
-         */
-        
-        
+    func updateContainerView(stepNumber index: Int) {
+        setViewControllers([contentViewControllers[index]], direction: .forward, animated: true, completion: nil)
     }
 
+    func instanteViewController(_ index: Int) -> UIViewController {
+        
+        let storyBoardOnBoarding = UIStoryboard(name: "OnBoarding", bundle: Bundle.main)
+        let viewController = storyBoardOnBoarding.instantiateViewController(withIdentifier: "OnBoardingSteps") as? OnBoardingStepsViewController
+        guard (viewController != nil) else {
+                return UIViewController()
+        }
+        
+        viewController!.item = items[index]
+        return viewController!
+    }
 }
+
+
