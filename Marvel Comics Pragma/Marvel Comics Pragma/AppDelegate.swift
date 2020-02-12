@@ -15,16 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        //UIView.appearance().backgroundColor = UIColor(named: "BackgroundColor")
-        //UILabel.appearance().tintColor = UIColor.white
-        
-        //onBoardingDisplay()
-        
-        let viewController = UIStoryboard(name: "OnBoarding", bundle: Bundle.main).instantiateInitialViewController()
-        
-        window?.rootViewController = viewController
-        
-        window?.makeKeyAndVisible()
+        onBoardingDisplay()
         
         return true
     }

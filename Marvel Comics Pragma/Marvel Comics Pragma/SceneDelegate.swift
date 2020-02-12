@@ -22,13 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        let viewController = UIStoryboard(name: "OnBoarding", bundle: Bundle.main).instantiateInitialViewController()
-        
-        window?.rootViewController = viewController
-        
-        window?.makeKeyAndVisible()
-        
-        //onBoardingDisplay()
+        onBoardingDisplay()
         
     }
 
