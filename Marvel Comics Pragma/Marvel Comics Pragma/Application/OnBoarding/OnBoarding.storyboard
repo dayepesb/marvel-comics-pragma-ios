@@ -32,7 +32,7 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThS-0x-uF3">
-                                <rect key="frame" x="40" y="798" width="334" height="34"/>
+                                <rect key="frame" x="40" y="800" width="334" height="32"/>
                                 <color key="backgroundColor" name="ButtonColor"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="17"/>
@@ -60,7 +60,7 @@
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="UNk-XA-wvB">
-                                <rect key="frame" x="187.5" y="753" width="39" height="37"/>
+                                <rect key="frame" x="187.5" y="755" width="39" height="37"/>
                                 <connections>
                                     <action selector="pageControll:" destination="dkO-jI-YhG" eventType="valueChanged" id="59T-Jb-bSm"/>
                                 </connections>
@@ -103,13 +103,13 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="716"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkn-z8-17Y">
-                                        <rect key="frame" x="174.5" y="478" width="65.5" height="32"/>
+                                        <rect key="frame" x="176.5" y="478" width="61.5" height="29.5"/>
                                         <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="25"/>
                                         <color key="textColor" name="SubTitleColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7V-q6-bI5">
-                                        <rect key="frame" x="20" y="543" width="374" height="22"/>
+                                        <rect key="frame" x="20" y="540.5" width="374" height="20"/>
                                         <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="17"/>
                                         <color key="textColor" name="TextColor"/>
                                         <nil key="highlightedColor"/>
@@ -159,10 +159,10 @@
             </objects>
             <point key="canvasLocation" x="4634.7826086956529" y="245.75892857142856"/>
         </scene>
-        <!--Main-->
+        <!--SignIn-->
         <scene sceneID="NB2-vK-KC6">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="3a6-WV-xwD" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SignIn" id="3a6-WV-xwD" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BcG-F5-qPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2836" y="624"/>

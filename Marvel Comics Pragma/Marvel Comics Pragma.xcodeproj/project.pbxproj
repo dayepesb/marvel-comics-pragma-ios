@@ -27,6 +27,7 @@
 		8016A5A723F37CF7006C4697 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A5A623F37CF7006C4697 /* OnBoardingStepsViewController.swift */; };
 		8016A5AA23F3802D006C4697 /* OnBoardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A5A923F3802D006C4697 /* OnBoardingItem.swift */; };
 		8016A5AC23F384CF006C4697 /* OnBoardingViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A5AB23F384CF006C4697 /* OnBoardingViewControllerExtension.swift */; };
+		8016A5AF23F3E782006C4697 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8016A5AE23F3E782006C4697 /* SignIn.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		8016A5A623F37CF7006C4697 /* OnBoardingStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStepsViewController.swift; sourceTree = "<group>"; };
 		8016A5A923F3802D006C4697 /* OnBoardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingItem.swift; sourceTree = "<group>"; };
 		8016A5AB23F384CF006C4697 /* OnBoardingViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewControllerExtension.swift; sourceTree = "<group>"; };
+		8016A5AE23F3E782006C4697 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		8016A58323F31FCE006C4697 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				8016A5AD23F3E760006C4697 /* SignIn */,
 				8016A58823F320F5006C4697 /* OnBoarding */,
 			);
 			path = Application;
@@ -175,6 +178,14 @@
 				8016A5A923F3802D006C4697 /* OnBoardingItem.swift */,
 			);
 			path = Structs;
+			sourceTree = "<group>";
+		};
+		8016A5AD23F3E760006C4697 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				8016A5AE23F3E782006C4697 /* SignIn.storyboard */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		ED9E81CB38487D420BE78664 /* Pods */ = {
@@ -251,6 +262,7 @@
 				8016A5A023F36514006C4697 /* Comic Book.otf in Resources */,
 				8016A57223F24E3C006C4697 /* ImageAssets.xcassets in Resources */,
 				8016A59F23F36514006C4697 /* Comic Book Italic.otf in Resources */,
+				8016A5AF23F3E782006C4697 /* SignIn.storyboard in Resources */,
 				8016A58723F320DD006C4697 /* OnBoarding.storyboard in Resources */,
 				8016A59E23F36514006C4697 /* Comic Book Bold.otf in Resources */,
 				8016A5A123F36514006C4697 /* Comic Book Bold Italic.otf in Resources */,

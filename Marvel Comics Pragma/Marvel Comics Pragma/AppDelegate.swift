@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var name = "OnBoarding"
         
         if onBoarding {
-            name = "Main"
+            name = "SignIn"
         }
         
         let viewController = UIStoryboard(name: name, bundle: Bundle.main).instantiateInitialViewController()

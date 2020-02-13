@@ -21,6 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: windowScene)
         
         onBoardingDisplay()
         
@@ -67,7 +69,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         var name = "OnBoarding"
         
         if onBoarding {
-            name = "Main"
+            name = "SignIn"
         }
         
         let viewController = UIStoryboard(name: name, bundle: Bundle.main).instantiateInitialViewController()
