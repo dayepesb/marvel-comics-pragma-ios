@@ -91,6 +91,13 @@
                                                 <state key="normal" title="Registrate">
                                                     <color key="titleColor" name="SubTitleColor"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="0QM-qt-D4Y" kind="popoverPresentation" popoverAnchorView="bah-aL-ba7" id="fC3-ZW-L1b">
+                                                        <segue key="commit" inheritsFrom="parent" id="7tu-Oa-uIg"/>
+                                                        <segue key="preview" inheritsFrom="commit" id="Tfx-XQ-K0B"/>
+                                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                    </segue>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" name="TransparentColor"/>
@@ -123,7 +130,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="oZE-ff-GOv"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbn-2n-Iv1">
-                                <rect key="frame" x="20" y="724" width="335" height="34"/>
+                                <rect key="frame" x="20" y="726" width="335" height="32"/>
                                 <color key="backgroundColor" name="ButtonColor"/>
                                 <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="17"/>
                                 <state key="normal" title="Ingresar">
@@ -136,7 +143,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sig-OF-6ey">
-                                <rect key="frame" x="127.66666666666669" y="654" width="120" height="50"/>
+                                <rect key="frame" x="127.66666666666669" y="656" width="120" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ska-pf-rFN">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -193,6 +200,16 @@
             </objects>
             <point key="canvasLocation" x="823.1884057971015" y="73.660714285714278"/>
         </scene>
+        <!--Register-->
+        <scene sceneID="T7m-zZ-OHZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Register" id="0QM-qt-D4Y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="j8u-W3-ZRy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="26R-am-VeK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1311" y="157"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Pragma" width="447" height="504"/>
@@ -220,4 +237,7 @@
             <color red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fC3-ZW-L1b"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -30,6 +30,8 @@
 		8016A5B923F73030006C4697 /* Comic Book Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8016A5B523F73030006C4697 /* Comic Book Bold.otf */; };
 		8016A5BB23F749C0006C4697 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8016A5BA23F749C0006C4697 /* SignInViewController.swift */; };
 		8026E42123FA4116004AC2FA /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8026E42023FA4116004AC2FA /* Icons.xcassets */; };
+		8026E42523FAE0FB004AC2FA /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8026E42423FAE0FB004AC2FA /* Register.storyboard */; };
+		8026E42723FAE10D004AC2FA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8026E42623FAE10D004AC2FA /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		8016A5B523F73030006C4697 /* Comic Book Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book Bold.otf"; sourceTree = "<group>"; };
 		8016A5BA23F749C0006C4697 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8026E42023FA4116004AC2FA /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		8026E42423FAE0FB004AC2FA /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		8026E42623FAE10D004AC2FA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 		8016A58323F31FCE006C4697 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				8026E42323FAE0DC004AC2FA /* Register */,
 				8016A5AD23F3E760006C4697 /* SignIn */,
 				8016A58823F320F5006C4697 /* OnBoarding */,
 			);
@@ -192,6 +197,15 @@
 				8016A5B323F73030006C4697 /* Comic Book.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8026E42323FAE0DC004AC2FA /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				8026E42423FAE0FB004AC2FA /* Register.storyboard */,
+				8026E42623FAE10D004AC2FA /* RegisterViewController.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		ED9E81CB38487D420BE78664 /* Pods */ = {
@@ -273,6 +287,7 @@
 				8016A5AF23F3E782006C4697 /* SignIn.storyboard in Resources */,
 				8016A58723F320DD006C4697 /* OnBoarding.storyboard in Resources */,
 				8026E42123FA4116004AC2FA /* Icons.xcassets in Resources */,
+				8026E42523FAE0FB004AC2FA /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +326,7 @@
 				8016A5BB23F749C0006C4697 /* SignInViewController.swift in Sources */,
 				8016A5AC23F384CF006C4697 /* OnBoardingViewControllerExtension.swift in Sources */,
 				8016A5A323F376AD006C4697 /* OnBoardingContainerViewController.swift in Sources */,
+				8026E42723FAE10D004AC2FA /* RegisterViewController.swift in Sources */,
 				8016A55D23F1F7BF006C4697 /* ViewController.swift in Sources */,
 				8016A5A523F377F5006C4697 /* OnBoardingViewController.swift in Sources */,
 				8016A5AA23F3802D006C4697 /* OnBoardingItem.swift in Sources */,
