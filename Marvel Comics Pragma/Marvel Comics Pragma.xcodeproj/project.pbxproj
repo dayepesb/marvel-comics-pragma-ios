@@ -32,6 +32,8 @@
 		8026E42123FA4116004AC2FA /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8026E42023FA4116004AC2FA /* Icons.xcassets */; };
 		8026E42523FAE0FB004AC2FA /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8026E42423FAE0FB004AC2FA /* Register.storyboard */; };
 		8026E42723FAE10D004AC2FA /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8026E42623FAE10D004AC2FA /* RegisterViewController.swift */; };
+		806ADAD6240177AA00D1F39E /* KeyBoardTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806ADAD5240177AA00D1F39E /* KeyBoardTools.swift */; };
+		806ADAD8240218EA00D1F39E /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806ADAD7240218EA00D1F39E /* List.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		8026E42023FA4116004AC2FA /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		8026E42423FAE0FB004AC2FA /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		8026E42623FAE10D004AC2FA /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		806ADAD5240177AA00D1F39E /* KeyBoardTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardTools.swift; sourceTree = "<group>"; };
+		806ADAD7240218EA00D1F39E /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		8016A55723F1F7BF006C4697 /* Marvel Comics Pragma */ = {
 			isa = PBXGroup;
 			children = (
+				806ADAD42401777F00D1F39E /* Generic */,
 				8016A5B123F72FFE006C4697 /* Fonts */,
 				8016A5A823F3801D006C4697 /* Structs */,
 				8016A58323F31FCE006C4697 /* Application */,
@@ -206,6 +211,15 @@
 				8026E42623FAE10D004AC2FA /* RegisterViewController.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		806ADAD42401777F00D1F39E /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				806ADAD5240177AA00D1F39E /* KeyBoardTools.swift */,
+				806ADAD7240218EA00D1F39E /* List.swift */,
+			);
+			path = Generic;
 			sourceTree = "<group>";
 		};
 		ED9E81CB38487D420BE78664 /* Pods */ = {
@@ -330,7 +344,9 @@
 				8016A55D23F1F7BF006C4697 /* ViewController.swift in Sources */,
 				8016A5A523F377F5006C4697 /* OnBoardingViewController.swift in Sources */,
 				8016A5AA23F3802D006C4697 /* OnBoardingItem.swift in Sources */,
+				806ADAD6240177AA00D1F39E /* KeyBoardTools.swift in Sources */,
 				8016A58223F30948006C4697 /* UIStoryboard.swift in Sources */,
+				806ADAD8240218EA00D1F39E /* List.swift in Sources */,
 				8016A55923F1F7BF006C4697 /* AppDelegate.swift in Sources */,
 				8016A57C23F26A90006C4697 /* UIViewControllerExtension.swift in Sources */,
 				8016A55B23F1F7BF006C4697 /* SceneDelegate.swift in Sources */,

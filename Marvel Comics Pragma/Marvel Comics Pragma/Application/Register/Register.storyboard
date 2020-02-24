@@ -8,8 +8,13 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comic Book.otf">
+            <string>ComicBook</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Registrate-->
+        <!--Sign Up-->
         <scene sceneID="Bbe-hB-mk8">
             <objects>
                 <viewController id="kuk-wd-Z5e" customClass="RegisterViewController" customModule="Marvel_Comics_Pragma" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,19 +23,170 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAX-km-oq3">
-                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="656"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p9I-0W-QyT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMx-5X-gQG">
+                                                <rect key="frame" x="20" y="70" width="374" height="34"/>
+                                                <color key="backgroundColor" name="TransparentColor"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="PlaceHolderColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fef-ra-qvW">
+                                                <rect key="frame" x="20" y="134" width="374" height="34"/>
+                                                <color key="backgroundColor" name="TransparentColor"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="PlaceHolderColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CLE-ZX-Kmk">
+                                                <rect key="frame" x="20" y="198" width="374" height="34"/>
+                                                <color key="backgroundColor" name="TransparentColor"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="PlaceHolderColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8dP-ai-BBq">
+                                                <rect key="frame" x="20" y="262" width="374" height="34"/>
+                                                <color key="backgroundColor" name="TransparentColor"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="PlaceHolderColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qG2-JS-MBE">
+                                                <rect key="frame" x="20" y="326" width="374" height="34"/>
+                                                <color key="backgroundColor" name="TransparentColor"/>
+                                                <color key="textColor" name="TextColor"/>
+                                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                        <color key="value" name="PlaceHolderColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" name="TransparentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="qMx-5X-gQG" secondAttribute="trailing" constant="20" id="1qE-bp-FRJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="qG2-JS-MBE" secondAttribute="trailing" constant="20" id="3Bc-zD-Wvs"/>
+                                            <constraint firstAttribute="trailing" secondItem="8dP-ai-BBq" secondAttribute="trailing" constant="20" id="3tS-m4-ur2"/>
+                                            <constraint firstItem="CLE-ZX-Kmk" firstAttribute="leading" secondItem="p9I-0W-QyT" secondAttribute="leading" constant="20" id="Pxu-A1-IgA"/>
+                                            <constraint firstItem="fef-ra-qvW" firstAttribute="leading" secondItem="p9I-0W-QyT" secondAttribute="leading" constant="20" id="Qes-cH-wbv"/>
+                                            <constraint firstItem="8dP-ai-BBq" firstAttribute="leading" secondItem="p9I-0W-QyT" secondAttribute="leading" constant="20" id="Tjk-zE-ORQ"/>
+                                            <constraint firstItem="8dP-ai-BBq" firstAttribute="top" secondItem="CLE-ZX-Kmk" secondAttribute="bottom" constant="30" id="Y1i-sQ-OMk"/>
+                                            <constraint firstItem="fef-ra-qvW" firstAttribute="top" secondItem="qMx-5X-gQG" secondAttribute="bottom" constant="30" id="ZpO-DX-uaR"/>
+                                            <constraint firstAttribute="height" constant="400" id="acx-Hw-bwt"/>
+                                            <constraint firstItem="qG2-JS-MBE" firstAttribute="leading" secondItem="p9I-0W-QyT" secondAttribute="leading" constant="20" id="c9d-PT-3Gk"/>
+                                            <constraint firstItem="qG2-JS-MBE" firstAttribute="top" secondItem="8dP-ai-BBq" secondAttribute="bottom" constant="30" id="dGc-aj-HUx"/>
+                                            <constraint firstAttribute="trailing" secondItem="CLE-ZX-Kmk" secondAttribute="trailing" constant="20" id="eiL-sM-gE0"/>
+                                            <constraint firstAttribute="trailing" secondItem="fef-ra-qvW" secondAttribute="trailing" constant="20" id="sNP-rg-pzz"/>
+                                            <constraint firstItem="qMx-5X-gQG" firstAttribute="top" secondItem="p9I-0W-QyT" secondAttribute="top" constant="70" id="utY-6v-QB2"/>
+                                            <constraint firstItem="qMx-5X-gQG" firstAttribute="leading" secondItem="p9I-0W-QyT" secondAttribute="leading" constant="20" id="zFl-OT-kMO"/>
+                                            <constraint firstItem="CLE-ZX-Kmk" firstAttribute="top" secondItem="fef-ra-qvW" secondAttribute="bottom" constant="30" id="zR6-ka-61K"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="p9I-0W-QyT" firstAttribute="leading" secondItem="uWh-gd-ULY" secondAttribute="leading" id="H2F-Vo-Cqu"/>
+                                    <constraint firstItem="p9I-0W-QyT" firstAttribute="trailing" secondItem="uWh-gd-ULY" secondAttribute="trailing" id="NeB-PS-pYJ"/>
+                                    <constraint firstItem="p9I-0W-QyT" firstAttribute="width" secondItem="vcE-YI-Sht" secondAttribute="width" id="cmH-ZT-4Wq"/>
+                                    <constraint firstItem="p9I-0W-QyT" firstAttribute="top" secondItem="uWh-gd-ULY" secondAttribute="top" id="fYI-pw-fqB"/>
+                                    <constraint firstItem="p9I-0W-QyT" firstAttribute="bottom" secondItem="uWh-gd-ULY" secondAttribute="bottom" id="h4E-Pc-t1g"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="uWh-gd-ULY"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vcE-YI-Sht"/>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioA-93-F73">
+                                <rect key="frame" x="20" y="796" width="374" height="32"/>
+                                <color key="backgroundColor" name="ButtonColor"/>
+                                <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="17"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" name="TextButtonColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="BackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ioA-93-F73" firstAttribute="top" secondItem="OAX-km-oq3" secondAttribute="bottom" id="GiU-6t-Xlm"/>
+                            <constraint firstItem="27L-GC-9Df" firstAttribute="trailing" secondItem="ioA-93-F73" secondAttribute="trailing" constant="20" id="H6y-wf-lYO"/>
                             <constraint firstItem="OAX-km-oq3" firstAttribute="trailing" secondItem="27L-GC-9Df" secondAttribute="trailing" id="RP4-Z1-Vso"/>
-                            <constraint firstAttribute="bottom" secondItem="OAX-km-oq3" secondAttribute="bottom" id="aUF-eF-Jl7"/>
+                            <constraint firstAttribute="bottom" secondItem="OAX-km-oq3" secondAttribute="bottom" constant="100" id="aUF-eF-Jl7"/>
                             <constraint firstItem="OAX-km-oq3" firstAttribute="top" secondItem="27L-GC-9Df" secondAttribute="top" id="h2o-bP-Nau"/>
+                            <constraint firstItem="ioA-93-F73" firstAttribute="leading" secondItem="27L-GC-9Df" secondAttribute="leading" constant="20" id="s8U-xn-Kvw"/>
                             <constraint firstItem="OAX-km-oq3" firstAttribute="leading" secondItem="27L-GC-9Df" secondAttribute="leading" id="zHY-hn-SXS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="27L-GC-9Df"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Registrate" id="Fru-xN-yIb"/>
+                    <navigationItem key="navigationItem" title="Sign Up" leftItemsSupplementBackButton="YES" id="Fru-xN-yIb">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="JvJ-yT-Eyd"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailtextField" destination="qMx-5X-gQG" id="qyt-5v-tb8"/>
+                        <outlet property="firstNameTextField" destination="CLE-ZX-Kmk" id="3pf-ED-GJ5"/>
+                        <outlet property="lastNameTextField" destination="8dP-ai-BBq" id="EYw-RG-3YI"/>
+                        <outlet property="navigationBar" destination="Fru-xN-yIb" id="MZI-fq-C6Q"/>
+                        <outlet property="passwordTextField" destination="fef-ra-qvW" id="MdR-WO-BaK"/>
+                        <outlet property="phoneNumberTextField" destination="qG2-JS-MBE" id="0Df-uD-T8l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KEP-8r-mUH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,6 +217,7 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oqV-3u-lSu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationItem title="Title" id="EXJ-Nh-wU4"/>
             </objects>
             <point key="canvasLocation" x="144.92753623188406" y="87.723214285714278"/>
         </scene>
@@ -69,8 +226,23 @@
         <namedColor name="BackgroundColor">
             <color red="0.0" green="0.14901960784313725" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="ButtonColor">
+            <color red="1" green="0.93333333333333335" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PlaceHolderColor">
+            <color red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextButtonColor">
+            <color red="0.93333333333333335" green="0.090196078431372548" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="TextColor">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TransparentColor">
+            <color red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
